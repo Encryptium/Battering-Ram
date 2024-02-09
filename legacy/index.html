@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<head>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-CYW9KYCXK2"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-CYW9KYCXK2');
+	</script>
+
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#141414" />
+	<meta name="description" content="A powerful and easy to use web app for unblocking websites.">
+	<title>Battering Ram</title>
+	<link rel="icon" type="image/x-icon" href="/favicon.png">
+	<link href="style.css" rel="stylesheet" />
+	<link rel="manifest" href="manifest.json" />
+	<script src="script.js" defer></script>
+	<script src="https://js.sentry-cdn.com/608243d45ccd1e01a93809e2e453969f.min.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<!-- For Sentry Status Monitoring -->
+	<script>
+		Sentry.onLoad(function() {
+			Sentry.init({
+				// Performance Monitoring
+				tracesSampleRate: 1.0, // Capture 100% of the transactions
+				// Session Replay
+				replaysSessionSampleRate: 0.1, // This sets the sample rate at 10%. You may want to change it to 100% while in development and then sample at a lower rate in production.
+				replaysOnErrorSampleRate: 1.0, // If you're not already sampling the entire session, change the sample rate to 100% when sampling sessions where errors occur.
+			});
+		});
+	</script>
+	
+	<div id="nav">
+		<ul>
+			<li><a href="../about/">About</a></li>
+			<li><a href="../terms/">Terms</a></li>
+			<li><a href="../privacy/">Privacy</a></li>
+			<li><a href="../contact/">Contact Us</a></li>
+		</ul>
+	</div>
+	
+	<input type="text" id="search" placeholder="Search for happiness" onkeyup="search()" autofocus>
+	<img src="/icon512_maskable.png" height="150" id="logo" class="disappear reappear">
+	<h1 id="slogan" class="disappear-y reappear-y">Their <span><span class="fire-gradient">firewall</span></span> is just a target for our <span id="battering-ram-highlight"><span class="water-gradient">battering ram</span></span>!</h1>
+	<!--<h1 id="slogan" class="disappear-y reappear-y">Unleash <span><span class="fire-gradient">fun</span></span> with every <span id="battering-ram-highlight"><span class="water-gradient">click</span></span>!</h1>-->
+	<p id="headline" class="disappear-y reappear-y"></p>
+	<figure id="banner-ad" class="disappear-y reappear-y">
+		<script type="text/javascript">		
+			var spons = false;
+			atOptions = {
+				'key' : '9e87404f5e49a59d4da2c065624e0061',
+				'format' : 'iframe',
+				'height' : 50,
+				'width' : 320,
+				'params' : {}
+			};
+
+			if (spons) {
+				document.write('<scr' + 'ipt type="text/javascript" src="//arrivedcanteen.com/9e87404f5e49a59d4da2c065624e0061/invoke.js"></scr' + 'ipt>');
+			}		
+		</script>
+		<figcaption>ADVERTISEMENT</figcaption>
+	</figure>
+
+	<!--<figure class="side-ad disappear-y reappear-y" id="side-ad-1">
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'ad84713ae2ffd29bf28cd65f656d3662',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="//arrivedcanteen.com/ad84713ae2ffd29bf28cd65f656d3662/invoke.js"></scr' + 'ipt>');
+		</script>
+		<figcaption>ADVERTISEMENT</figcaption>
+	</figure>
+
+	<figure class="side-ad disappear-y reappear-y" id="side-ad-2">
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'b7bd605536826482650d810014920aea',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="//arrivedcanteen.com/b7bd605536826482650d810014920aea/invoke.js"></scr' + 'ipt>');
+		</script>
+		<figcaption>ADVERTISEMENT</figcaption>
+	</figure> -->
+
+	<div id="gradient-top-border" style="display:none !important"></div>
+	<div id="launch-panel"></div>
+	
+	<a id="scroll-down" class="animated-floating" href="#bottom"><img src="/down.png" height="20"></a>
+
+
+	<script defer>
+		if ('serviceworker' in navigator) {
+		navigator.serviceWorker.register('service-worker.js');
+		}
+	</script>
+
+	<!-- Copyright (c) 2023 Encryptium -->
+
+	<!-- <script type='text/javascript' src='//arrivedcanteen.com/ec/3e/06/ec3e06c697c85a5f3c84e6dbd4be6d1c.js'></script> -->
+</body>
+</html>
