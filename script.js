@@ -1,4 +1,4 @@
-fetch("/game-index.txt")
+fetch("game-index.txt")
 .then((res) => res.text())
 .then((text) => {
 	var games = text.split("\n");
