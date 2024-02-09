@@ -1,0 +1,15 @@
+{
+  "properties": {
+    "parent": "guideline",
+    "langOverride": "mode-options",
+    "game": "test",
+    "pgmusic": "pg-deluxe"
+  },
+  "data": [
+    {
+      "string": "testLabel",
+      "langOverride": "menu_guideline",
+      "type": "header"
+    }
+  ]
+}
