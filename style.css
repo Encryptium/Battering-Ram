@@ -11,7 +11,7 @@
 	padding: 0;
 	color: white;
 	user-select: none;
-	cursor: url('/default.cur'), default;
+	cursor: url('default.cur'), default;
 }
 
 body {
@@ -88,7 +88,7 @@ img {
 	transition: background-color 0.5s;
 	padding: 10px;
 	width: 100%;
-	cursor: url('/active.cur'), row-resize;
+	cursor: url('active.cur'), row-resize;
 }
 
 #sidebar ul li:hover {
@@ -165,7 +165,7 @@ img {
 	font-weight: 600;
 	font-size: 14px;
 	color: grey;
-	cursor: url('/active.cur'), pointer;
+	cursor: url('active.cur'), pointer;
 }
 
 #content {
@@ -344,7 +344,7 @@ span#battering-ram-highlight {
 	border-radius: 4px 0px 0px 4px;
 	padding: 7px 10px;
 	flex: 1;
-	cursor: url('/active.cur'), pointer;
+	cursor: url('active.cur'), pointer;
 	font-weight: 600;
 }
 
@@ -466,7 +466,7 @@ span#battering-ram-highlight {
 	bottom: 25px;
 	transform: translateX(-50%);
 	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-	cursor: url('/active.cur'), pointer;
+	cursor: url('active.cur'), pointer;
 }
 
 #scroll-down img {
