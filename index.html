@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<head>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-CYW9KYCXK2"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-CYW9KYCXK2');
+	</script>
+
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#141414" />
+	<meta name="description" content="A powerful and easy to use web app for unblocking websites.">
+	<title>Battering Ram</title>
+	<link rel="icon" type="image/x-icon" href="favicon.png">
+	<link href="style.css" rel="stylesheet" />
+	<link rel="manifest" href="manifest.json" />
+	<script src="script.js" defer></script>
+	<script src="sidebar.js" defer></script>
+	<script src="https://js.sentry-cdn.com/608243d45ccd1e01a93809e2e453969f.min.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<!-- For Sentry Status Monitoring -->
+	<script>
+		Sentry.onLoad(function() {
+			Sentry.init({
+				// Performance Monitoring
+				tracesSampleRate: 1.0, // Capture 100% of the transactions
+				// Session Replay
+				replaysSessionSampleRate: 0.1, // This sets the sample rate at 10%. You may want to change it to 100% while in development and then sample at a lower rate in production.
+				replaysOnErrorSampleRate: 1.0, // If you're not already sampling the entire session, change the sample rate to 100% when sampling sessions where errors occur.
+			});
+		});
+	</script>
+
+	<div id="nav">
+		<ul>
+			<li><a href="about/">About</a></li>
+			<li><a href="terms/">Terms</a></li>
+			<li><a href="privacy/">Privacy</a></li>
+			<li><a href="contact/">Contact</a></li>
+		</ul>
+	</div>
+
+	<div id="sidebar">
+		<div id="battering-ram-search">
+			<img src="logo.png">
+			<p>Battering Ram</p>
+		</div>
+		<input type="text" id="search" placeholder="Search for happiness" onkeyup="search()" autocomplete="off" autofocus>
+
+		<h3>Library</h3>
+		<div id="qd-separator"></div>
+		<ul id="sidebar-module-list"></ul>
+
+		<div id="empty-description">
+			<img src="empty.png" height="100">
+			<h2>You Have Nothing Saved</h2>
+			<p>Add programs to begin...</p>
+		</div>
+
+		<!-- <a id="legacy-link" href="legacy/">/ Revert to Legacy /</a> -->
+	</div>
+
+	<div id="content">
+		<!-- New Featured Games Section -->
+		<div id="featured-section" class="disappear-y reappear-y">
+			<img src="trenchwarfare.jpg" alt="Trench Warfare 1944 image banner">
+			<h2>Featured</h2>
+			<div id="battering-ram-logo">
+				<img src="logo.png">
+				<p>Battering Ram</p>
+			</div>
+			<h3>TRENCH WARFARE</h3>
+			<p id="description"><i>Trench Warfare 1944</i> is a strategy game set in WWII, focusing on the brutal realities of trench combat. Players lead units through historically accurate battles, managing tactics and resources to overcome the enemy in the mud-soaked trenches of the Western Front.</p>
+			<a href="/trenchwarfare1944/" target="_blank">Play</a>
+		</div>
+
+		<div id="launch-panel"></div>
+
+		<a id="scroll-down" class="animated-floating" href="#bottom"><img src="down.png" height="20"></a>
+	</div>
+
+
+	<script defer>
+		if ('serviceworker' in navigator) {
+		navigator.serviceWorker.register('service-worker.js');
+		}
+	</script>
+
+	<!-- Copyright (c) 2024 Encryptium -->
+
+</body>
+</html>
