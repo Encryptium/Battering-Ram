@@ -1,31 +1,31 @@
-Warfare 1944:trenchwarfare1944/:by Armor Games:New!
-Retro Bowl:retrobowl/:by Baekho:New!
-Age of War:ageofwar/:by Louissi
-Only Up!:only-up/:by vakhtangi1980
-Moto X3M:x3m/:by Konstantin Matrunchik
-Flood Runner:floodrunner/:by Unknown:New!
-1v1.LOL:1v1.LOL/:by JustPlay.LOL
-Hardest Game:worldshardestgame/:by Stephen Critoph:New!
-Tetra Legends:tetralegends/:by Dr. Ocelot
-The Oregon Trail:theoregontrail/:by MECC
-2048:2048/:by Gabriele Cirulli
-Slope:slope/:by Slope Game
-Sudoku:sudoku/:by Mohammad Diab
-Bitlife:bitlife/:by Candywriter, LLC:runtime
-Minecraft:minecraft/:by sd592g
-Tag:tag/:by Joeriri
-Rooftop Snipers:rooftop-snipers/:by Rooftop Snipers:runtime
-Getting Over It:getting-over-it/:by griffpatch
-Ice Dodo:icedodo/:by OnionFist
-Drift Hunters:drift-hunters/:by Drift Hunters:loadtime
-Green:green/:by Bart BONTE
-Asteroids:asteroids/:by Doug McInnes
-Bottle Flip 3D:bottle-flip-3d/:by vakhtangi1980
-Candy Crush:candy-crush/:by SAGA
-Jelly Truck:jelly-truck/:by CoolMathGames
-Doodle Jump:doodle-jump/:by 3kho
-Dino Game:chrome-dino/:by DachXD
-Idle Breakout:idle-breakout/:by Kodiqi
-Angry Birds:angry-birds/:by HHBResearch:runtime
-Pacman:pacman/:by Brent Ward
-Crossy Road:crossy-road/:by Hunor Marton Borbely
+Warfare 1944:../trenchwarfare1944/:by Armor Games:New!
+Retro Bowl:../retrobowl/:by Baekho:New!
+Age of War:../ageofwar/:by Louissi
+Only Up!:../only-up/:by vakhtangi1980
+Moto X3M:../x3m/:by Konstantin Matrunchik
+Flood Runner:../floodrunner/:by Unknown:New!
+1v1.LOL:../1v1.LOL/:by JustPlay.LOL
+Hardest Game:../worldshardestgame/:by Stephen Critoph:New!
+Tetra Legends:../tetralegends/:by Dr. Ocelot
+The Oregon Trail:../theoregontrail/:by MECC
+2048:../2048/:by Gabriele Cirulli
+Slope:../slope/:by Slope Game
+Sudoku:../sudoku/:by Mohammad Diab
+Bitlife:../bitlife/:by Candywriter, LLC:runtime
+Minecraft:../minecraft/:by sd592g
+Tag:../tag/:by Joeriri
+Rooftop Snipers:../rooftop-snipers/:by Rooftop Snipers:runtime
+Getting Over It:../getting-over-it/:by griffpatch
+Ice Dodo:../icedodo/:by OnionFist
+Drift Hunters:../drift-hunters/:by Drift Hunters:loadtime
+Green:../green/:by Bart BONTE
+Asteroids:../asteroids/:by Doug McInnes
+Bottle Flip 3D:../bottle-flip-3d/:by vakhtangi1980
+Candy Crush:../candy-crush/:by SAGA
+Jelly Truck:../jelly-truck/:by CoolMathGames
+Doodle Jump:../doodle-jump/:by 3kho
+Dino Game:../chrome-dino/:by DachXD
+Idle Breakout:../idle-breakout/:by Kodiqi
+Angry Birds:../angry-birds/:by HHBResearch:runtime
+Pacman:../pacman/:by Brent Ward
+Crossy Road:../crossy-road/:by Hunor Marton Borbely
