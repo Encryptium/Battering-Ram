@@ -6,7 +6,7 @@ Moto X3M:x3m/:by Konstantin Matrunchik
 Flood Runner:floodrunner/:by Unknown:New!
 1v1.LOL:1v1.LOL/:by JustPlay.LOL
 Hardest Game:worldshardestgame/:by Stephen Critoph:New!
-Tetra Legends:tetralegends/:by Dr. Ocelot
+Tetra Legends:tetra-legends/:by Dr. Ocelot
 The Oregon Trail:theoregontrail/:by MECC
 2048:2048/:by Gabriele Cirulli
 Slope:slope/:by Slope Game
