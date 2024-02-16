@@ -1,9 +1,13 @@
 Warfare 1944:trenchwarfare1944/:by Armor Games:New!
-Retro Bowl:retrobowl/:by Baekho:New!
+Retro Bowl:retrobowl/:by Baekho
+Last Horizon:last-horizon/:by PixelJAM Games:New!
+Tank Pixel:tank-pixel/:by RHM Interactive:New!
+TABS:tabs/:by SilverGames:runtime
+Hyper Tunnel:hyper-tunnel/by Vasco Freitas:New!
 Age of War:ageofwar/:by Louissi
 Only Up!:only-up/:by vakhtangi1980
 Moto X3M:x3m/:by Konstantin Matrunchik
-Flood Runner:floodrunner/:by Unknown:New!
+Flood Runner:floodrunner/:by Unknown
 1v1.LOL:1v1.LOL/:by JustPlay.LOL
 Hardest Game:worldshardestgame/:by Stephen Critoph:New!
 Tetra Legends:tetra-legends/:by Dr. Ocelot
