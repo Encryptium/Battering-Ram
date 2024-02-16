@@ -3,7 +3,7 @@ Retro Bowl:retrobowl/:by Baekho
 Last Horizon:last-horizon/:by PixelJAM Games:New!
 Tank Pixel:tank-pixel/:by RHM Interactive:New!
 TABS:tabs/:by SilverGames:runtime
-Hyper Tunnel:hyper-tunnel/by Vasco Freitas:New!
+Hyper Tunnel:hyper-tunnel/:by Vasco Freitas:New!
 Age of War:ageofwar/:by Louissi
 Only Up!:only-up/:by vakhtangi1980
 Moto X3M:x3m/:by Konstantin Matrunchik
