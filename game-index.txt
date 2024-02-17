@@ -3,6 +3,7 @@ Warfare 1944:trenchwarfare1944/:by Armor Games:New!
 Retro Bowl:retrobowl/:by Baekho
 TABS:tabs/:by SilverGames:runtime
 Tank Pixel:tank-pixel/:by RHM Interactive:New!
+Duck Life:ducklife/:by Wix Games:runtime
 Hyper Tunnel:hyper-tunnel/:by Vasco Freitas:New!
 Age of War:ageofwar/:by Louissi
 Only Up!:only-up/:by vakhtangi1980
