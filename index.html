@@ -23,18 +23,52 @@
 	<script src="script.js" defer></script>
 	<script src="sidebar.js" defer></script>
 	<script src="https://js.sentry-cdn.com/608243d45ccd1e01a93809e2e453969f.min.js" crossorigin="anonymous"></script>
+	<script
+		src="https://browser.sentry-cdn.com/7.92.0/bundle.tracing.replay.feedback.min.js"
+		integrity="sha384-vNrwKX1mpBPi+hCnoCBgJdsKBwZ25ZKSfqfgBAn9Q75leI/mnQ9SgrCndQ2MKRlu"
+		crossorigin="anonymous"
+	></script>
 </head>
 <body>
 	<!-- For Sentry Status Monitoring -->
 	<script>
-		Sentry.onLoad(function() {
-			Sentry.init({
+		var feedbackRandomization = Math.floor(Math. random()*10);
+		var sentryCode = {
+			// Performance Monitoring
+			tracesSampleRate: 1.0, // Capture 100% of the transactions
+			// Session Replay
+			replaysSessionSampleRate: 0.1, // This sets the sample rate at 10%. You may want to change it to 100% while in development and then sample at a lower rate in production.
+			replaysOnErrorSampleRate: 1.0, // If you're not already sampling the entire session, change the sample rate to 100% when sampling sessions where errors occur.
+		};
+		
+		if (!feedbackRandomization) {
+			sentryCode = {
 				// Performance Monitoring
 				tracesSampleRate: 1.0, // Capture 100% of the transactions
 				// Session Replay
 				replaysSessionSampleRate: 0.1, // This sets the sample rate at 10%. You may want to change it to 100% while in development and then sample at a lower rate in production.
 				replaysOnErrorSampleRate: 1.0, // If you're not already sampling the entire session, change the sample rate to 100% when sampling sessions where errors occur.
-			});
+				
+				dsn: "https://608243d45ccd1e01a93809e2e453969f@o1369750.ingest.sentry.io/4506447415803904",
+				integrations: [
+					new Sentry.Feedback({
+						// Additional SDK configuration goes in here, for example:
+						colorScheme: "dark",
+						showBranding: false,
+						buttonLabel: "Give Feedback",
+						formTitle: "Feedback Form",
+						namePlaceholder: "John Doe",
+						emailPlaceholder: "john.doe@example.com",
+						submitButtonLabel: "Send Feedback",
+						messagePlaceholder: "What's the problem or suggestion?",
+						successMessageText: "Thank you for your feedback!",
+					}),
+				],
+			};
+		}
+		
+		Sentry.onLoad(function() {
+			Sentry.init(sentryCode);
 		});
 	</script>
 
