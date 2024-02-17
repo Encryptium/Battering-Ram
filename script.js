@@ -4,7 +4,7 @@ fetch("game-index.txt")
 	var games = text.split("\n");
 	
 	for (let i = 0; i < games.length; i++) {
-		if (games[i][0] + games[i][1] == "//") {
+		if (!games[i]) {
 			continue;
 		}
 		
