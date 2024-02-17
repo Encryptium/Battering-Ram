@@ -4,6 +4,7 @@ Retro Bowl:retrobowl/:by Baekho
 TABS:tabs/:by SilverGames:runtime
 OvO:ovo/:by Dedra:New!
 A Gun in Time:a-gun-in-time/:by Justwo:New!
+Tomb of the Mask:tomb-of-the-mask/:by Bin Studio:runtime
 Tank Pixel:tank-pixel/:by RHM Interactive:New!
 Duck Life:ducklife/:by Wix Games:runtime
 BTD4:btd4/:by Ninja Kiwi:New!
