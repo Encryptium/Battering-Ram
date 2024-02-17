@@ -1,8 +1,8 @@
 Last Horizon:last-horizon/:by PixelJAM Games:New!
 Warfare 1944:trenchwarfare1944/:by Armor Games:New!
 Retro Bowl:retrobowl/:by Baekho
-Tank Pixel:tank-pixel/:by RHM Interactive:New!
 TABS:tabs/:by SilverGames:runtime
+Tank Pixel:tank-pixel/:by RHM Interactive:New!
 Hyper Tunnel:hyper-tunnel/:by Vasco Freitas:New!
 Age of War:ageofwar/:by Louissi
 Only Up!:only-up/:by vakhtangi1980
