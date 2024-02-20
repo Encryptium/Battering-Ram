@@ -168,6 +168,19 @@ img {
 	cursor: url('active.cur'), pointer;
 }
 
+#status-link {
+	position: absolute;
+	top: 7px;
+	left: 50%;
+	transform: translateX(-50%);
+	font-weight: 600;
+	font-size: 14px;
+	color: #373737;
+	cursor: url('active.cur'), pointer;
+	width: 100%;
+	text-align: center;
+}
+
 #content {
 	width: calc(100vw - 280px);
 	margin-left: 280px;
@@ -415,7 +428,12 @@ span#battering-ram-highlight {
 	transform: translateX(-50%);
 	display: inline-block;
 	height: 50px;
-	width: 165px
+	width: 225px;/*165*/
+	cursor: url('active.cur'), pointer;
+	background-color: #1c1c1c;
+	border-radius: 9px;
+	/* add padding to the contents of this div so that they don't touch the borders */
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 #battering-ram-search img {
@@ -424,19 +442,22 @@ span#battering-ram-highlight {
 	border-radius: 50%;
 	position: absolute;
 	top: 50%;
-	left: 0px;
+	left: 10px;
 	transform: translateY(-50%);
+	pointer-events: none;
 }
 
 #battering-ram-search p {
-	font-size: 18px;
+	color: grey;
+	font-size: 16px;
 	font-weight: 500;
 	display: inline;
 	position: absolute;
 	top: 50%;
-	right: 0px;
+	right: 10px;
 	transform: translateY(-50%);
 	text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+	pointer-events: none;
 }
 
 
