@@ -645,7 +645,7 @@ span#battering-ram-highlight {
 
 	-webkit-text-stroke: 2px white;
 	color: transparent;
-	font-size: 46px; /*48*/
+	font-size: 52px; /*48*/
 	font-weight: bold; 
 	font-style: italic;
 	z-index: 3;

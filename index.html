@@ -7,7 +7,7 @@
 		window.dataLayer = window.dataLayer || [];
 		function gtag(){dataLayer.push(arguments);}
 		gtag('js', new Date());
-		
+
 		gtag('config', 'G-GZLRRKVH4C');
 	</script>
 
@@ -18,7 +18,7 @@
 	<meta name="description" content="A powerful and easy to use web app for unblocking websites.">
 	<title>Battering Ram</title>
 	<link rel="icon" type="image/x-icon" href="favicon.png">
-	<link href="style.css" rel="stylesheet">
+	<link href="development.css" rel="stylesheet">
 	<link rel="manifest" href="manifest.json">
 	<script src="script.js" defer></script>
 	<script src="sidebar.js" defer></script>
@@ -40,7 +40,7 @@
 			replaysSessionSampleRate: 0.1, // This sets the sample rate at 10%. You may want to change it to 100% while in development and then sample at a lower rate in production.
 			replaysOnErrorSampleRate: 1.0, // If you're not already sampling the entire session, change the sample rate to 100% when sampling sessions where errors occur.
 		};
-		
+
 		if (!feedbackRandomization) {
 			sentryCode = {
 				// Performance Monitoring
@@ -48,7 +48,7 @@
 				// Session Replay
 				replaysSessionSampleRate: 0.1, // This sets the sample rate at 10%. You may want to change it to 100% while in development and then sample at a lower rate in production.
 				replaysOnErrorSampleRate: 1.0, // If you're not already sampling the entire session, change the sample rate to 100% when sampling sessions where errors occur.
-				
+
 				dsn: "https://608243d45ccd1e01a93809e2e453969f@o1369750.ingest.sentry.io/4506447415803904",
 				integrations: [
 					new Sentry.Feedback({
@@ -66,7 +66,7 @@
 				],
 			};
 		}
-		
+
 		Sentry.onLoad(function() {
 			Sentry.init(sentryCode);
 		});
@@ -105,15 +105,15 @@
 	<div id="content">
 		<!-- New Featured Games Section -->
 		<div id="featured-section" class="disappear-y reappear-y">
-			<img src="lh.webp" alt="Last Horizon image banner">
+			<img src="tag.webp" alt="Last Horizon image banner">
 			<!-- <img id="banner-overlay" src="rain.gif"> -->
 			<h2>Featured</h2>
 			<div id="battering-ram-logo">
 				<img src="logo.png">
 				<p>Battering Ram</p>
 			</div>
-			<h3>LAST HORIZON</h3>
-			<p id="description"><i>Last Horizon</i> is an immersive space exploration game, tasking players with piloting a spaceship through the cosmos to find humanity's new home. Navigate galaxies, collect resources, and survive the vastness of space in this adventure of discovery and survival.</p>
+			<h3>TAG</h3>
+			<p id="description">Joeriri's <i>Tag</i> is a fast-paced multiplayer game where agility and strategy are key. Players dash through diverse arenas, tagging opponents. Join the chase and revisit this childhood game with your friends in a thrilling new way!</p>
 			<a href="last-horizon/" target="_blank">Play</a>
 		</div>
 
