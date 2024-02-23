@@ -298,8 +298,8 @@ span#battering-ram-highlight {
 
 .launch-card {
 	border: 3px solid whitesmoke;
-	border-radius: 9px;
-	height: 175px;
+	border-radius: 12px;
+	height: 170px;
 	/* width: 80%; */
 	width: 250px;
 	margin: auto;
@@ -317,7 +317,7 @@ span#battering-ram-highlight {
 	content: "";
 	position: absolute;
 	inset: 0;
-	border-radius: 9px; 
+	border-radius: 12px; 
 	padding: 5px; 
 	background:linear-gradient(45deg,tomato, #ffc107); 
 	-webkit-mask: 
@@ -336,8 +336,8 @@ span#battering-ram-highlight {
 
 .options {
 	position: absolute;
-	right: 20px;
-	bottom: 20px;
+	right: 15px;
+	bottom: 15px;
 	display: flex;
 }
 
