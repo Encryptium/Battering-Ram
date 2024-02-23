@@ -36,8 +36,6 @@
 		var sentryCode = {
 			dsn: "https://608243d45ccd1e01a93809e2e453969f@o1369750.ingest.sentry.io/4506447415803904",
 			integrations: [
-				// Add browser profiling integration to the list of integrations
-				new Sentry.BrowserProfilingIntegration(),
 				new Sentry.BrowserTracing(),
 			],
 
@@ -46,7 +44,7 @@
 			// Session Replay
 			replaysSessionSampleRate: 1.0, // This sets the sample rate at 10%. You may want to change it to 100% while in development and then sample at a lower rate in production.
 			replaysOnErrorSampleRate: 1.0, // If you're not already sampling the entire session, change the sample rate to 100% when sampling sessions where errors occur.
-			profilesSampleRate: 1.0,
+			// profilesSampleRate: 1.0,
 		};
 
 		if (!feedbackRandomization) {
@@ -59,7 +57,6 @@
 
 				dsn: "https://608243d45ccd1e01a93809e2e453969f@o1369750.ingest.sentry.io/4506447415803904",
 				integrations: [
-					new Sentry.BrowserProfilingIntegration(),
 					new Sentry.BrowserTracing(),
 					new Sentry.Feedback({
 						// Additional SDK configuration goes in here, for example:
@@ -74,7 +71,7 @@
 						successMessageText: "Thank you for your feedback!",
 					}),
 				],
-				profilesSampleRate: 1.0,
+				// profilesSampleRate: 1.0,
 			};
 		}
 
