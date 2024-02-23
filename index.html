@@ -34,6 +34,13 @@
 	<script>
 		var feedbackRandomization = Math.floor(Math. random()*10);
 		var sentryCode = {
+			dsn: "https://608243d45ccd1e01a93809e2e453969f@o1369750.ingest.sentry.io/4506447415803904",
+			integrations: [
+				// Add browser profiling integration to the list of integrations
+				new Sentry.BrowserProfilingIntegration(),
+				new Sentry.BrowserTracing(),
+			],
+
 			// Performance Monitoring
 			tracesSampleRate: 1.0, // Capture 100% of the transactions
 			// Session Replay
@@ -52,6 +59,8 @@
 
 				dsn: "https://608243d45ccd1e01a93809e2e453969f@o1369750.ingest.sentry.io/4506447415803904",
 				integrations: [
+					new Sentry.BrowserProfilingIntegration(),
+					new Sentry.BrowserTracing(),
 					new Sentry.Feedback({
 						// Additional SDK configuration goes in here, for example:
 						colorScheme: "dark",
