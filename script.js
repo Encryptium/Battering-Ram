@@ -156,15 +156,43 @@ launchPanel.addEventListener("scroll", e => {
 
 
 
-
 // sheet
-
 function initializeSheet() {
-	document.querySelector('.launch-card:first-child img').addEventListener('click', function() {
-			document.getElementById('popupSheet').classList.add('active');
-	});
+		document.querySelector('.launch-card:first-child img').addEventListener('click', function() {
+				const overlay = document.createElement('div');
+				overlay.setAttribute('id', 'pageOverlay');
+				overlay.classList.add('overlay');
+				document.body.appendChild(overlay);
+
+				// Apply blur to specific elements rather than the body
+				applyBlurToBackground(true);
+
+				document.getElementById('popupSheet').classList.add('active');
+				// Ensure sheet is interactable
+				document.getElementById('popupSheet').style.pointerEvents = 'auto';
+
+				// Close sheet when overlay is clicked
+				overlay.addEventListener('click', closeSheet);
+		});
 }
 
 function closeSheet() {
+		const overlay = document.getElementById('pageOverlay');
+		if (overlay) {
+				document.body.removeChild(overlay);
+		}
+		// Remove blur from background elements
+		applyBlurToBackground(false);
 		document.getElementById('popupSheet').classList.remove('active');
+}
+
+function applyBlurToBackground(shouldBlur) {
+		const elementsToBlur = document.querySelectorAll('body > *:not(.sheet):not(.overlay)');
+		elementsToBlur.forEach(el => {
+				if (shouldBlur) {
+						el.classList.add('blur-and-darken');
+				} else {
+						el.classList.remove('blur-and-darken');
+				}
+		});
 }
