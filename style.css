@@ -16,6 +16,7 @@
 	color: white;
 	user-select: none;
 	cursor: url('default.cur'), default;
+	scrollbar-width: none;
 }
 
 body {
@@ -466,7 +467,7 @@ span#battering-ram-highlight {
 }
 
 .sheet-content {
-	padding: 30px 30px 50px 45px;
+	padding: 30px 50px 50px 45px;
 	height: 100%;
 	overflow-y: scroll;
 }
