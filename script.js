@@ -1,13 +1,22 @@
+// Coming soon card
+document.getElementById('launch-panel').innerHTML += 
+	`
+	<div class="launch-card">
+		<img src="coming-soon.jpg">
+		<h2>Coming Soon!<wbr><span class="water-gradient">Coming Soon!</span></h2>
+	</div>
+	`;
+
 fetch("game-index.txt")
 .then((res) => res.text())
 .then((text) => {
 	var games = text.split("\n");
-	
+
 	for (let i = 0; i < games.length; i++) {
 		if (!games[i]) {
 			continue;
 		}
-		
+
 		if (games[i].split(":").length == 4 && games[i].split(":")[3] == "runtime") {
 			document.getElementById('launch-panel').innerHTML += 
 			`
@@ -53,6 +62,7 @@ fetch("game-index.txt")
 			`;
 			continue;
 		}
+		// Special tagged cards
 		else if (games[i].split(":").length == 4) {
 			document.getElementById('launch-panel').innerHTML += 
 			`
@@ -95,7 +105,7 @@ fetch("game-index.txt")
 	for (var i = 0; i < launchCards.length-1; i++) {
 		launchCards[i].id = "card" + i;
 	}
-})
+}).then(() => {initializeSheet();})
 .catch((e) => console.error(e));
 
 
@@ -144,3 +154,17 @@ launchPanel.addEventListener("scroll", e => {
 });
 
 
+
+
+
+// sheet
+
+function initializeSheet() {
+	document.querySelector('.launch-card:first-child img').addEventListener('click', function() {
+			document.getElementById('popupSheet').classList.add('active');
+	});
+}
+
+function closeSheet() {
+		document.getElementById('popupSheet').classList.remove('active');
+}

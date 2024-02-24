@@ -34,17 +34,11 @@
 	<script>
 		var feedbackRandomization = Math.floor(Math. random()*10);
 		var sentryCode = {
-			dsn: "https://608243d45ccd1e01a93809e2e453969f@o1369750.ingest.sentry.io/4506447415803904",
-			integrations: [
-				new Sentry.BrowserTracing(),
-			],
-
 			// Performance Monitoring
 			tracesSampleRate: 1.0, // Capture 100% of the transactions
 			// Session Replay
-			replaysSessionSampleRate: 1.0, // This sets the sample rate at 10%. You may want to change it to 100% while in development and then sample at a lower rate in production.
+			replaysSessionSampleRate: 0.1, // This sets the sample rate at 10%. You may want to change it to 100% while in development and then sample at a lower rate in production.
 			replaysOnErrorSampleRate: 1.0, // If you're not already sampling the entire session, change the sample rate to 100% when sampling sessions where errors occur.
-			// profilesSampleRate: 1.0,
 		};
 
 		if (!feedbackRandomization) {
@@ -52,12 +46,11 @@
 				// Performance Monitoring
 				tracesSampleRate: 1.0, // Capture 100% of the transactions
 				// Session Replay
-				replaysSessionSampleRate: 1.0, // This sets the sample rate at 10%. You may want to change it to 100% while in development and then sample at a lower rate in production.
+				replaysSessionSampleRate: 0.1, // This sets the sample rate at 10%. You may want to change it to 100% while in development and then sample at a lower rate in production.
 				replaysOnErrorSampleRate: 1.0, // If you're not already sampling the entire session, change the sample rate to 100% when sampling sessions where errors occur.
 
 				dsn: "https://608243d45ccd1e01a93809e2e453969f@o1369750.ingest.sentry.io/4506447415803904",
 				integrations: [
-					new Sentry.BrowserTracing(),
 					new Sentry.Feedback({
 						// Additional SDK configuration goes in here, for example:
 						colorScheme: "dark",
@@ -71,7 +64,6 @@
 						successMessageText: "Thank you for your feedback!",
 					}),
 				],
-				// profilesSampleRate: 1.0,
 			};
 		}
 
@@ -113,7 +105,7 @@
 	<div id="content">
 		<!-- New Featured Games Section -->
 		<div id="featured-section" class="disappear-y reappear-y">
-			<img src="tag.webp" alt="Tag image banner">
+			<img src="tag.webp" alt="Last Horizon image banner">
 			<!-- <img id="banner-overlay" src="rain.gif"> -->
 			<h2>Featured</h2>
 			<div id="battering-ram-logo">
@@ -122,12 +114,33 @@
 			</div>
 			<h3>TAG</h3>
 			<p id="description">Joeriri's <i>Tag</i> is a fast-paced multiplayer game where agility and strategy are key. Players dash through diverse arenas, tagging opponents. Join the chase and revisit this childhood game with your friends in a thrilling new way!</p>
-			<a href="tag/" target="_blank">Play</a>
+			<a href="last-horizon/" target="_blank">Play</a>
 		</div>
 
 		<div id="launch-panel"></div>
 
 		<a id="scroll-down" class="animated-floating" href="#bottom"><img src="down.png" height="20"></a>
+	</div>
+
+	<!-- Full-screen pop-up sheet, covers the full screen -->
+	<div class="sheet" id="popupSheet">
+			<div class="sheet-content">
+					<h2>What's Coming Next</h2>
+					<p>We're always working hard to bring more exciting games and updates to our platform. Here's a sneak peek at what you can expect in the near future:</p>
+					<ul>
+							<li><strong>New Adventure Games:</strong> Embark on epic quests and unravel mysteries in our upcoming adventure game lineup.</li>
+							<li><strong>Multiplayer Features:</strong> Connect with friends and compete against rivals with new multiplayer integrations.</li>
+							<li><strong>Enhanced User Experience:</strong> Enjoy smoother gameplay and faster loading times thanks to our latest platform upgrades.</li>
+					</ul>
+	
+					<h3>Suggest a Game</h3>
+					<p>Got a game in mind that you'd love to see on our platform? We're all ears! Here's how you can share your suggestions with us:</p>
+					<p>During a random point in time, you may see a "Suggest a Game" button on the homepage. Click it to open the game suggestion form. Fill out the form, and click submit. We will try to accomodate it on our platform as soon as possible. However, some games may not be able to be added to the platform due to lack of support.</p>
+					<p>Your feedback and suggestions are invaluable to us as we strive to make our platform the best it can be. Let's create the ultimate gaming community together!</p>
+
+
+					<button onclick="closeSheet()">x</button>
+			</div>
 	</div>
 
 
