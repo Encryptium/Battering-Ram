@@ -796,6 +796,12 @@ span#battering-ram-highlight {
 	z-index: 3;
 }
 
+/* for special messages */
+#featured-section #lm-link {
+	left: 50%;
+	transform: translate(-50%);
+}
+
 
 /* Media Queries */
 

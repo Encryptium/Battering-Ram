@@ -174,6 +174,24 @@ function initializeSheet() {
 				// Close sheet when overlay is clicked
 				overlay.addEventListener('click', closeSheet);
 		});
+
+		// temporary, only for special messages
+		document.querySelector('#lm-link').addEventListener('click', function() {
+				const overlay = document.createElement('div');
+				overlay.setAttribute('id', 'pageOverlay');
+				overlay.classList.add('overlay');
+				document.body.appendChild(overlay);
+	
+				// Apply blur to specific elements rather than the body
+				applyBlurToBackground(true);
+	
+				document.getElementById('popupSheet').classList.add('active');
+				// Ensure sheet is interactable
+				document.getElementById('popupSheet').style.pointerEvents = 'auto';
+	
+				// Close sheet when overlay is clicked
+				overlay.addEventListener('click', closeSheet);
+		});
 }
 
 function closeSheet() {
