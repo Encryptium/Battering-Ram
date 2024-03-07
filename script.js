@@ -214,3 +214,20 @@ function applyBlurToBackground(shouldBlur) {
 				}
 		});
 }
+
+
+// Make the #launch-panel the default scroll element
+// by capturing scroll arrow keys
+document.addEventListener('keydown', function(event) {
+    const scrollableDiv = document.querySelector('#launch-panel');
+    if (!scrollableDiv) return;
+
+    switch (event.keyCode) {
+        case 38: // Arrow Up
+            scrollableDiv.scrollTop -= 100; // Adjust the pixel value as needed
+            break;
+        case 40: // Arrow Down
+            scrollableDiv.scrollTop += 100; // Adjust the pixel value as needed
+            break;
+    }
+});
