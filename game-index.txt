@@ -21,7 +21,6 @@ The Oregon Trail:theoregontrail/:by MECC
 2048:2048/:by Gabriele Cirulli
 Slope:slope/:by Slope Game
 Sudoku:sudoku/:by Mohammad Diab
-Bitlife:bitlife/:by Candywriter, LLC:runtime
 Minecraft:minecraft/:by sd592g
 Tag:tag/:by Joeriri
 Rooftop Snipers:rooftop-snipers/:by Rooftop Snipers:runtime
