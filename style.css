@@ -417,13 +417,13 @@ span#battering-ram-highlight {
 	font-weight: 500;
 	/* padding: 10px; */
 	font-size: 14px;
-	outline: solid 2px indianred;
+	outline: solid 2px orange;
 }
 
 .launch-note span {
 	background: transparent;
 	font-family: 'Noto Sans SC', sans-serif;
-	color: indianred;
+	color: orange;
 	position: absolute;
 	top: calc(50% - 1px);
 	left: 50%;
