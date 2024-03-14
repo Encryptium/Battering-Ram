@@ -7,6 +7,12 @@
 
 /* special */
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Pixels&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+@font-face {
+    font-family: Oasis;
+    src: url(Oasis-BW0JV.ttf);
+}
 
 * {
 	font-family: 'IBM Plex Sans', sans-serif;
