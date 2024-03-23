@@ -1,11 +1,11 @@
 // Coming soon card
-document.getElementById('launch-panel').innerHTML += 
-	`
-	<div class="launch-card">
-		<img src="coming-soon.jpg">
-		<h2>Coming Soon!<wbr><span class="water-gradient">Coming Soon!</span></h2>
-	</div>
-	`;
+// document.getElementById('launch-panel').innerHTML += 
+// 	`
+// 	<div class="launch-card">
+// 		<img src="coming-soon.jpg">
+// 		<h2>Coming Soon!<wbr><span class="water-gradient">Coming Soon!</span></h2>
+// 	</div>
+// 	`;
 
 fetch("game-index.txt")
 .then((res) => res.text())

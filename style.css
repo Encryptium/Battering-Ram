@@ -319,7 +319,7 @@ span#battering-ram-highlight {
 	position: relative;
 }
 
-.launch-card:first-child {
+/* .launch-card:first-child {
 	border: none;
 	margin-top: 25px;
 	background-image: url('coming-soon.jpg');
@@ -360,7 +360,7 @@ span#battering-ram-highlight {
 	-webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%);
 	clip-path: polygon(100% 0, 100% 100%, 0 100%);
 	pointer-events: none;
-}
+} */
 
 .launch-card p {
 	font-style: italic;
